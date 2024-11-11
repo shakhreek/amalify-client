@@ -22,16 +22,16 @@
     {
         "display_name": "Stock Products",
         "route": "/products",
-        "icon": "bx bxs-buildings"
+        "icon": "bx bxs-package"
     },
     {
         "display_name": "Sellers",
-        "route": "/Users",
-        "icon": "bx bxs-user-account"
+        "route": "/sellers",
+        "icon": "bx bxs-group"
     },
     {
         "display_name": "Purchases",
-        "route": "/NewEntries",
-        "icon": "bx bxs-message-alt-add"
+        "route": "/purchases",
+        "icon": "bx bxs-receipt"
     }
 ]

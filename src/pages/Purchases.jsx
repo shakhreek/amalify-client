@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Modal, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, IconButton, Chip, Typography, Card, CardHeader, CardContent, Button } from '@mui/material';
 import { Edit, Add } from '@mui/icons-material';
-import ProductsModal from '../components/productsModal/productsModal';
 import customerList from '../assets/JsonData/customers-list.json';
+import PurchaseModal from '../components/purchaseModal/PurchaseModal';
 
-const customerTableHead = ['ID', 'Name', 'Purchased', 'Sold', 'Stock', 'Actions'];
+const customerTableHead = ['ID', 'Supplier', 'Items', 'Quantity', 'Quantity for Free', 'Price', 'Total', 'Actions'];
 
-const Products = () => {
+const Purchases = () => {
     const [selectedCustomer, setSelectedCustomer] = useState(null);
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -33,11 +33,11 @@ const Products = () => {
     return (
         <div>
             <Typography variant="h4" component="h2" gutterBottom>
-                Stock Products
+                Purchases
             </Typography>
             <Card>
                 <CardHeader 
-                    title="Products List" 
+                    title="Purchases List" 
                     action={
                         <Button
                             variant="contained"
@@ -46,7 +46,7 @@ const Products = () => {
                             onClick={() => openModal({ id: '', name: '', phone: '', total_spend: '', status: 'potential' })}
                             sx={{ marginRight: 2 }}
                         >
-                            Add Product
+                            Add Purchase
                         </Button>
                     }
                 />
@@ -64,10 +64,12 @@ const Products = () => {
                                 {customerList.map((customer, index) => (
                                     <TableRow key={index} hover>
                                         <TableCell>{customer.id}</TableCell>
-                                        <TableCell>{"Ozone Generator"}</TableCell>
-                                        <TableCell>{8}</TableCell>
+                                        <TableCell>{"NANA"}</TableCell>
+                                        <TableCell>{'Ozone Generator'}</TableCell>
                                         <TableCell>{3}</TableCell>
                                         <TableCell>{5}</TableCell>
+                                        <TableCell>${250}</TableCell>
+                                        <TableCell>${500}</TableCell>
                                         <TableCell>
                                             <IconButton onClick={(e) => {
                                                 e.stopPropagation();
@@ -85,7 +87,7 @@ const Products = () => {
             </Card>
 
             <Modal open={modalIsOpen} onClose={closeModal}>
-                <ProductsModal
+                <PurchaseModal
                     customer={selectedCustomer}
                     onClose={closeModal}
                     onEdit={handleEdit}
@@ -96,4 +98,4 @@ const Products = () => {
     );
 };
 
-export default Products;
+export default Purchases;

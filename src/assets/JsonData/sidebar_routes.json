@@ -25,8 +25,8 @@
         "icon": "bx bxs-package"
     },
     {
-        "display_name": "Sellers",
-        "route": "/sellers",
+        "display_name": "Managers",
+        "route": "/managers",
         "icon": "bx bxs-group"
     },
     {

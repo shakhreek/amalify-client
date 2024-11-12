@@ -8,6 +8,7 @@ import Leads from '../pages/Leads'
 import Contracts from '../pages/Contracts'
 import Products from '../pages/Products'
 import Purchases from '../pages/Purchases'
+import Sellers from '../pages/Sellers'
 
 const Routes = () => {
     return (
@@ -18,6 +19,7 @@ const Routes = () => {
             <Route path='/contracts' component={Contracts}/>
             <Route path='/products' component={Products}/>
             <Route path='/purchases' component={Purchases}/>
+            <Route path='/managers' component={Sellers}/>
         </Switch>
     )
 }

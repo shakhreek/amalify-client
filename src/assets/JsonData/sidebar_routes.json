@@ -1,37 +1,42 @@
 [
-    {
-        "display_name": "Dashboard",
-        "route": "/",
-        "icon": "bx bxs-home"
-    },
-    {
-        "display_name": "Leads",
-        "route": "/leads",
-        "icon": "bx bxs-user"
-    },
-    {
-        "display_name": "Customers",
-        "route": "/customers",
-        "icon": "bx bxs-user-rectangle"
-    },
-    {
-        "display_name": "Contracts",
-        "route": "/contracts",
-        "icon": "bx bx-clipboard"
-    },
-    {
-        "display_name": "Stock Products",
-        "route": "/products",
-        "icon": "bx bxs-package"
-    },
-    {
-        "display_name": "Managers",
-        "route": "/managers",
-        "icon": "bx bxs-group"
-    },
-    {
-        "display_name": "Purchases",
-        "route": "/purchases",
-        "icon": "bx bxs-receipt"
-    }
+  {
+    "display_name": "Dashboard",
+    "route": "/",
+    "icon": "bx bxs-home"
+  },
+  {
+    "display_name": "Leads",
+    "route": "/leads",
+    "icon": "bx bxs-user"
+  },
+  {
+    "display_name": "Customers",
+    "route": "/customers",
+    "icon": "bx bxs-user-rectangle"
+  },
+  {
+    "display_name": "Contracts",
+    "route": "/contracts",
+    "icon": "bx bx-clipboard"
+  },
+  {
+    "display_name": "Stock Products",
+    "route": "/products",
+    "icon": "bx bxs-package"
+  },
+  {
+    "display_name": "Managers",
+    "route": "/managers",
+    "icon": "bx bxs-group"
+  },
+  {
+    "display_name": "Purchases",
+    "route": "/purchases",
+    "icon": "bx bxs-receipt"
+  },
+  {
+    "display_name": "Conversations",
+    "route": "/conversations",
+    "icon": "bx bxs-chat"
+  }
 ]

@@ -16,6 +16,7 @@ import {
   Button,
 } from "@mui/material";
 import DoneIcon from "@mui/icons-material/Done";
+import FilterButton from "../components/filterButton/filterButton";
 
 const latestOrders = {
   header: [
@@ -127,7 +128,7 @@ const Dashboard = () => {
             }}
           >
             <CardHeader title="Call Duties" />
-            <Button variant="contained">Filter</Button>
+            <FilterButton />
           </div>
           <CardContent>
             <TableContainer

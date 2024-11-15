@@ -80,9 +80,9 @@
   color: red;
   text-align: left;
   margin-left: 20px;
-  margin-top: 5px; /* 10px below the input */
-  margin-bottom: 20px; /* 20px space below the error */
-  display: block; /* Ensures error text is displayed as a block element */
+  margin-top: 5px;
+  margin-bottom: 20px;
+  display: block;
 }
 
 .loginInput:focus {

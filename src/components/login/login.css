@@ -1,0 +1,109 @@
+.login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginContent {
+  width: 25%;
+  border: 2px solid rgb(207, 207, 207);
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.loginTitle {
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.loginInput {
+  outline: none;
+  padding: 10px;
+  border: none;
+  box-shadow: none;
+  width: 100%;
+}
+
+.loginEmailInput {
+  border-radius: 12px;
+  margin-bottom: 10px;
+  border: 2px solid #d4d4d4;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.passwordInputContainer {
+  width: 90%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  border: 2px solid #d4d4d4;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.loginPasswordInput {
+  outline: none;
+  padding: 10px;
+  width: 85%;
+  border: none;
+  box-shadow: none;
+}
+
+.passwordField {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.togglePasswordButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+
+.errorText {
+  color: red;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 5px; /* 10px below the input */
+  margin-bottom: 20px; /* 20px space below the error */
+  display: block; /* Ensures error text is displayed as a block element */
+}
+
+.loginInput:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.loginEmailInput:focus,
+.passwordInputContainer:focus {
+  border: none;
+}
+
+.loginInput:focus,
+.loginPasswordInput:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.loginEmailInput:focus,
+.passwordInputContainer:focus {
+  border: none;
+}

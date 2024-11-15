@@ -10,6 +10,7 @@ import Products from "../pages/Products";
 import Purchases from "../pages/Purchases";
 import Sellers from "../pages/Sellers";
 import Conversations from "../pages/Conversations";
+import Login from "../pages/login";
 
 const Routes = () => {
   return (
@@ -22,6 +23,7 @@ const Routes = () => {
       <Route path="/purchases" component={Purchases} />
       <Route path="/managers" component={Sellers} />
       <Route path="/conversations" component={Conversations} />
+      <Route path="/login" component={Login} />
     </Switch>
   );
 };

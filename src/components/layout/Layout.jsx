@@ -14,6 +14,7 @@ import ThemeAction from "../../redux/actions/ThemeAction";
 import { ThemeProvider } from "@emotion/react";
 import { CssBaseline } from "@mui/material";
 import { darkTheme, lightTheme } from "../thememenu/theme";
+import Login from "../../pages/login";
 
 const Layout = () => {
   const themeReducer = useSelector((state) => state.ThemeReducer);
@@ -48,26 +49,28 @@ const Layout = () => {
   }, [dispatch]);
 
   return (
-    <BrowserRouter>
-      <Route
-        render={(props) => (
-          <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
-            <CssBaseline />
-            <div
-              className={`layout ${themeReducer.mode} ${themeReducer.color}`}
-            >
-              <Sidebar {...props} />
-              <div className="layout__content">
-                <TopNav />
-                <div className="layout__content-main">
-                  <Routes />
+    <>
+      <BrowserRouter>
+        <Route
+          render={(props) => (
+            <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+              <CssBaseline />
+              <div
+                className={`layout ${themeReducer.mode} ${themeReducer.color}`}
+              >
+                <Sidebar {...props} />
+                <div className="layout__content">
+                  <TopNav />
+                  <div className="layout__content-main">
+                    <Routes />
+                  </div>
                 </div>
               </div>
-            </div>
-          </ThemeProvider>
-        )}
-      />
-    </BrowserRouter>
+            </ThemeProvider>
+          )}
+        />
+      </BrowserRouter>
+    </>
   );
 };
 

@@ -9,7 +9,6 @@ import Purchases from "../pages/Purchases";
 import Sellers from "../pages/Sellers";
 import Conversations from "../pages/Conversations";
 import Login from "../pages/login";
-=======
 import Conversions from "../pages/Conversions";
 
 const Routes = () => {

@@ -35,8 +35,8 @@
     "icon": "bx bxs-receipt"
   },
   {
-    "display_name": "Conversations",
-    "route": "/conversations",
-    "icon": "bx bxs-chat"
+    "display_name": "Conversions",
+    "route": "/conversions",
+    "icon": "bx bx-filter-alt"
   }
 ]

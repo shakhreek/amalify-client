@@ -1,5 +1,7 @@
 import React from "react";
+
 import { Route, Switch } from "react-router-dom";
+
 import Dashboard from "../pages/Dashboard";
 import Customers from "../pages/Customers";
 import Leads from "../pages/Leads";
@@ -7,9 +9,6 @@ import Contracts from "../pages/Contracts";
 import Products from "../pages/Products";
 import Purchases from "../pages/Purchases";
 import Sellers from "../pages/Sellers";
-import Conversations from "../pages/Conversations";
-import Login from "../pages/login";
-=======
 import Conversions from "../pages/Conversions";
 
 const Routes = () => {
@@ -22,8 +21,6 @@ const Routes = () => {
       <Route path="/products" component={Products} />
       <Route path="/purchases" component={Purchases} />
       <Route path="/managers" component={Sellers} />
-      <Route path="/conversations" component={Conversations} />
-      <Route path="/login" component={Login} />
       <Route path="/conversions" component={Conversions} />
     </Switch>
   );

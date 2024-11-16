@@ -7,7 +7,6 @@ import Contracts from "../pages/Contracts";
 import Products from "../pages/Products";
 import Purchases from "../pages/Purchases";
 import Sellers from "../pages/Sellers";
-import Conversations from "../pages/Conversations";
 import Login from "../pages/login";
 import Conversions from "../pages/Conversions";
 
@@ -21,7 +20,6 @@ const Routes = () => {
       <Route path="/products" component={Products} />
       <Route path="/purchases" component={Purchases} />
       <Route path="/managers" component={Sellers} />
-      <Route path="/conversations" component={Conversations} />
       <Route path="/login" component={Login} />
       <Route path="/conversions" component={Conversions} />
     </Switch>
